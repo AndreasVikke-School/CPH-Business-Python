@@ -7,7 +7,7 @@ def print_file_content(file):
             print(row)
 
 def write_list_to_file(output_file, *strings):
-    with open(output_file, 'a') as File:
+    with open(output_file, 'w') as File:
         for s in strings:
             File.write(s + "\n")
 
