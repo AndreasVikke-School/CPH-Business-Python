@@ -1,7 +1,7 @@
 import sys
 from urllib.parse import urlparse
 import logging
-import webget
+import Modules.webget as webget
 
 
 log_fmt = '%(asctime)s - %(levelname)s - %(message)s'
