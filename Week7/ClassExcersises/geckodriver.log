@@ -1,0 +1,175 @@
+1583827588690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePNNdQY"
+1583827588995	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1583827589389	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1583827589389	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1583827589389	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1583827589389	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.534: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.534: Loading IM context type 'ibus' failed
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.538: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.538: Loading IM context type 'ibus' failed
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.540: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.540: Loading IM context type 'ibus' failed
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.541: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:5904): Gtk-WARNING **: 09:06:29.541: Loading IM context type 'ibus' failed
+
+(firefox:5904): Gtk-WARNING **: 09:06:30.043: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:5904): Gtk-WARNING **: 09:06:30.043: Loading IM context type 'ibus' failed
+
+(firefox:5904): Gtk-WARNING **: 09:06:30.044: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:5904): Gtk-WARNING **: 09:06:30.044: Loading IM context type 'ibus' failed
+1583827591063	Marionette	INFO	Listening on port 38785
+1583827591098	Marionette	WARN	TLS certificate errors will be ignored for this session
+1583827602467	Marionette	INFO	Stopped listening on port 38785
+1583827668398	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQ2IQmV"
+1583827668781	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1583827669171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1583827669171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1583827669171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1583827669172	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.308: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.308: Loading IM context type 'ibus' failed
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.314: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.314: Loading IM context type 'ibus' failed
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.319: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.319: Loading IM context type 'ibus' failed
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.320: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.320: Loading IM context type 'ibus' failed
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.850: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.850: Loading IM context type 'ibus' failed
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.851: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9561): Gtk-WARNING **: 09:07:49.851: Loading IM context type 'ibus' failed
+1583827670936	Marionette	INFO	Listening on port 41281
+1583827671012	Marionette	WARN	TLS certificate errors will be ignored for this session
+1583827682225	Marionette	INFO	Stopped listening on port 41281
+1583827686529	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIW9Ufw"
+1583827687844	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1583827688235	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1583827688235	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1583827688235	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1583827688235	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.366: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.366: Loading IM context type 'ibus' failed
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.370: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.370: Loading IM context type 'ibus' failed
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.373: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.373: Loading IM context type 'ibus' failed
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.374: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.374: Loading IM context type 'ibus' failed
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.889: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.889: Loading IM context type 'ibus' failed
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.891: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:9852): Gtk-WARNING **: 09:08:08.891: Loading IM context type 'ibus' failed
+1583827689868	Marionette	INFO	Listening on port 42569
+1583827689936	Marionette	WARN	TLS certificate errors will be ignored for this session
+1583827696159	Marionette	INFO	Stopped listening on port 42569
+1583828025061	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek0VGry"
+1583828026402	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1583828026805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1583828026805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1583828026805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1583828026805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.931: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.931: Loading IM context type 'ibus' failed
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.934: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.934: Loading IM context type 'ibus' failed
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.936: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.936: Loading IM context type 'ibus' failed
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.937: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10226): Gtk-WARNING **: 09:13:46.937: Loading IM context type 'ibus' failed
+
+(firefox:10226): Gtk-WARNING **: 09:13:47.476: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10226): Gtk-WARNING **: 09:13:47.476: Loading IM context type 'ibus' failed
+
+(firefox:10226): Gtk-WARNING **: 09:13:47.477: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10226): Gtk-WARNING **: 09:13:47.477: Loading IM context type 'ibus' failed
+1583828028380	Marionette	INFO	Listening on port 36971
+1583828028470	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://coopcdnpro.blob.core.windows.net/brands/html_distribution/coop_adform_v2/js/load_data.js?v=0.3863619251350803&_=1583828034046, line 1: ReferenceError: setTimelineRepeat is not defined
+1583828059714	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBgXf2V"
+1583828061077	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1583828061451	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1583828061451	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1583828061451	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1583828061451	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.582: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.582: Loading IM context type 'ibus' failed
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.586: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.586: Loading IM context type 'ibus' failed
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.588: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.588: Loading IM context type 'ibus' failed
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.589: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10463): Gtk-WARNING **: 09:14:21.589: Loading IM context type 'ibus' failed
+
+(firefox:10463): Gtk-WARNING **: 09:14:22.100: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10463): Gtk-WARNING **: 09:14:22.101: Loading IM context type 'ibus' failed
+
+(firefox:10463): Gtk-WARNING **: 09:14:22.102: GModule (/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-ibus.so) initialization check failed: GLib version too old (micro mismatch)
+
+(firefox:10463): Gtk-WARNING **: 09:14:22.102: Loading IM context type 'ibus' failed
+1583828063048	Marionette	INFO	Listening on port 38787
+1583828063122	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://eus.rubiconproject.com/usync.html, line 12: SecurityError: The operation is insecure.
+1583828065797	Marionette	INFO	Stopped listening on port 36971
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1583828070775	Marionette	INFO	Stopped listening on port 38787
