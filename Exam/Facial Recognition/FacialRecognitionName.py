@@ -102,16 +102,19 @@ if __name__ == "__main__":
     vikke_face_encoding = _learn_face('Images/Vikke.jpg')[0]
     fred_face_encoding = _learn_face('Images/Fred.jpg')[0]
     martin_face_encoding = _learn_face('Images/Martin.jpg')[0]
+    max_face_encoding = _learn_face('Images/Max.jpg')[0]
     
     known_face_encodings = [
         vikke_face_encoding,
         fred_face_encoding,
-        martin_face_encoding
+        martin_face_encoding,
+        max_face_encoding
     ]
     known_face_names = [
         "Andreas Vikke",
         "Fredrik Holm",
-        "Martin Frederiksen"
+        "Martin Frederiksen",
+        "Max Gade"
     ]
 
     faces = draw_rects_on_image()
