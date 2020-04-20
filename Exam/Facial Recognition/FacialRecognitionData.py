@@ -4,10 +4,18 @@ import sys
 
 face_detector = dlib.get_frontal_face_detector()
 
-predictor_68_point_model = "./models/shape_predictor_68_face_landmarks.dat"
-pose_predictor_68_point = dlib.shape_predictor(predictor_68_point_model)
 
+"""
+    shape_predictor_68_face_landmarks.dat is trained on the ibug 300-W dataset and gives back 68 face landmarks
+
+    dlib_face_recognition_resnet_model_v1.dat is a pre learned dataset of about 3 million faces.
+    The model is a ResNet network with 29 conv layers.
+
+    More can be read at https://github.com/davisking/dlib-models
+"""
+predictor_68_point_model = "./models/shape_predictor_68_face_landmarks.dat"
 face_recognition_model = "./models/dlib_face_recognition_resnet_model_v1.dat"
+pose_predictor_68_point = dlib.shape_predictor(predictor_68_point_model)
 face_encoder = dlib.face_recognition_model_v1(face_recognition_model)
 
 

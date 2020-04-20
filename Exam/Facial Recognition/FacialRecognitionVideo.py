@@ -1,20 +1,42 @@
-import FacialRecognitionLearner as frl
 import FacialRecognitionDraw as frld
 import numpy as np
+import argparse
+import sys
 import cv2
+import os
 
-def video_capture():
-    cap = cv2.VideoCapture(2)
-    known_name_image = frld.learn_faces()
+def video_capture(args):
+    camera = 0
+    if args.camera.isdigit(): 
+        camera = int(args.camera)
+    else:
+        if os.path.isfile(args.camera):
+            camera = args.camera
+        else:
+            raise ConnectionError("Camera must be an integer or an existing file")
+
+    cap = cv2.VideoCapture(camera)
+    known_name_images = frld.learn_faces()
+
+    process_frame = True
+    draw_features = args.features
+
+    is_image = False
+    if not args.camera.isdigit():
+        is_image = camera.split('.')[1] in ['jpg', 'png', 'jpeg']
 
     while(True):
         # Capture frame-by-frame
-        ret, frame = cap.read()
+        if is_image:
+            frame = cv2.imread(camera)
+        else:
+            ret, frame = cap.read()
 
-        image = frld.show_matches_on_image(known_name_image, frame)
+        if process_frame:
+            frame = frld.show_matches_on_image(known_name_images, frame, upscale=1 if is_image else 4, draw_features=draw_features)
 
         # Display the resulting frame
-        cv2.imshow('Frame', image)
+        cv2.imshow('Frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
@@ -23,4 +45,9 @@ def video_capture():
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-    video_capture()
+    parser = argparse.ArgumentParser(description='A program that records the video camera and shows facial recognition. Press q to quit the program.')
+    parser.add_argument('camera', help='an int for the camera to be used')
+    parser.add_argument('-f', '--features', default=False, help='a boolean if features of the face should be drawn')
+    args = parser.parse_args()
+
+    video_capture(args)
