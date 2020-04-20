@@ -3,9 +3,6 @@ import numpy as np
 import cv2
 import sys
 
-image_path = sys.argv[1]
-image = cv2.imread(image_path)
-
 def learn_faces():
     known_name_image = {
         "Andreas Vikke" : frl.face_encodings_data(cv2.imread('images/train/Vikke.jpg'))[0],
@@ -15,7 +12,7 @@ def learn_faces():
     }
     return known_name_image
 
-def show_matches_on_image(known_name_image):
+def show_matches_on_image(known_name_image, image):
     face_locations = frl.face_location_data(image)
     face_encodings = frl.face_encodings_data(image, face_locations)
 
@@ -31,12 +28,10 @@ def show_matches_on_image(known_name_image):
 
 
         landmarks_as_tuples = frl.faces_landmarks_dict(image, face_locations)
-        draw_on_image(t, r, b, l, face_name, landmarks_as_tuples[idx])        
+        draw_on_image(t, r, b, l, face_name, landmarks_as_tuples[idx], image)        
+    return image
 
-    cv2.imshow("Faces found", image)
-    cv2.waitKey(0)
-
-def draw_on_image(t, r, b, l, face_name, face_features):
+def draw_on_image(t, r, b, l, face_name, face_features, image):
 
     # Draw rectangle around face    
     cv2.rectangle(image, (l, t), (r, b), (0, 200, 0), 2)
@@ -58,6 +53,11 @@ def draw_on_image(t, r, b, l, face_name, face_features):
         1)
 
 if __name__ == "__main__":
+    image_path = sys.argv[1]
+    image = cv2.imread(image_path)
     known_name_image = learn_faces()
-    show_matches_on_image(known_name_image)
+    show_matches_on_image(known_name_image, image)
+
+    cv2.imshow("Faces found", image)
+    cv2.waitKey(0)
     

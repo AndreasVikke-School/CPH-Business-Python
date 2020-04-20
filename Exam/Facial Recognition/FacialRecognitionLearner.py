@@ -103,7 +103,7 @@ def compare_faces(known_face_encodings, face_encoding, tolerance=0.6):
 
         :param known_face_encodings: a lsit of known face encodings
         :param face_encodings: a single face encoding to check against the list
-        _param tolerance: How much distance between face encodings to consider it a match
+        :param tolerance: How much distance between face encodings to consider it a match
     """
 
     return list(face_distance(known_face_encodings, face_encoding) <= tolerance)
