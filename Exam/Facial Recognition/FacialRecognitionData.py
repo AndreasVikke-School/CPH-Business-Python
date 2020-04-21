@@ -105,7 +105,7 @@ def face_encodings_data(image, face_locations=None):
     landmarks = _faces_landmarks_data(image, face_locations)
     return [np.array(face_encoder.compute_face_descriptor(image, raw_landmark_set, 1)) for raw_landmark_set in landmarks]
 
-def compare_faces(known_face_encodings, face_encoding, tolerance=0.6):
+def compare_faces(known_face_encodings, face_encoding, tolerance=0.63):
     """
         Retuns a list of faces the encoding have matched againts
 

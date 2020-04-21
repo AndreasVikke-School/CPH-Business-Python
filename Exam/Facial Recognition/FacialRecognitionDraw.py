@@ -12,11 +12,12 @@ def learn_faces():
         "Andreas Vikke" : frd.face_encodings_data(cv2.imread('images/train/Vikke.jpg'))[0],
         "Frederik Holm" : frd.face_encodings_data(cv2.imread('images/train/Fred.jpg'))[0],
         "Martin Eli" : frd.face_encodings_data(cv2.imread('images/train/Martin.jpg'))[0],
-        "Max Gade" : frd.face_encodings_data(cv2.imread('images/train/Max.jpg'))[0]
+        "Max Gade" : frd.face_encodings_data(cv2.imread('images/train/Max.jpg'))[0],
+        "Lars" : frd.face_encodings_data(cv2.imread('images/train/lam.jpg'))[0]
     }
     return known_name_images
 
-def show_matches_on_image(known_name_images, image, upscale=1, draw_features=False):
+def show_matches_on_image(known_name_images, image, upscale=1, draw_features=False, tolerance=0.63):
     """
         Finds matches of people on image and draws rectangles, names and fatures on the image
 
@@ -27,7 +28,7 @@ def show_matches_on_image(known_name_images, image, upscale=1, draw_features=Fal
     """
 
     if upscale > 1:
-        small_image = cv2.resize(image, (0, 0), fx=0.25, fy=0.25)
+        small_image = cv2.resize(image, (0, 0), fx=1/upscale, fy=1/upscale)
     else:
         small_image = image
 
@@ -35,7 +36,7 @@ def show_matches_on_image(known_name_images, image, upscale=1, draw_features=Fal
     face_encodings = frd.face_encodings_data(small_image, face_locations)
 
     for idx, ((t, r, b, l), face_encoding) in enumerate(zip(face_locations, face_encodings)):
-        face_matches = frd.compare_faces(known_name_images, face_encoding, 0.62)
+        face_matches = frd.compare_faces(known_name_images, face_encoding, tolerance)
 
         face_name = "Unknown"
 
@@ -64,7 +65,7 @@ def draw_on_image(t, r, b, l, face_name, face_features, image, upscale=1, draw_f
     # Upscale the cords to match the image
     (t, r, b, l) = (t*upscale, r*upscale, b*upscale, l*upscale)
 
-    # Draw rectangle around face    
+    # Draw rectangle around face
     cv2.rectangle(image, (l, t), (r, b), (0, 200, 0), 2)
 
     # Draw face features
@@ -75,7 +76,7 @@ def draw_on_image(t, r, b, l, face_name, face_features, image, upscale=1, draw_f
                     cv2.line(image, (points[idx][0]*upscale, points[idx][1]*upscale), (points[idx+1][0]*upscale, points[idx+1][1]*upscale), (255,255,255), 1)
 
     # Draw Rectangle with name in
-    height = 15*2
+    height = 30
     cv2.rectangle(image, (l-1, t-height), (r+1, t), (0, 200, 0), cv2.FILLED)
     cv2.putText(image, face_name, 
         (l+6, t - 6), 

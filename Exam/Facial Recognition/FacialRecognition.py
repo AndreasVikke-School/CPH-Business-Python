@@ -33,7 +33,7 @@ def video_capture(args):
             ret, frame = cap.read()
 
         if process_frame:
-            frame = frld.show_matches_on_image(known_name_images, frame, upscale=1 if is_image else 4, draw_features=draw_features)
+            frame = frld.show_matches_on_image(known_name_images, frame, upscale=1 if is_image else 4, draw_features=draw_features, tolerance=float(args.tolerance))
 
         # Display the resulting frame
         cv2.imshow('Frame', frame)
@@ -46,8 +46,9 @@ def video_capture(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='A program that records the video camera and shows facial recognition. Press q to quit the program.')
-    parser.add_argument('camera', help='an int for the camera to be used')
+    parser.add_argument('camera', help='an int for the camera or a string of the filename to show')
     parser.add_argument('-f', '--features', default=False, help='a boolean if features of the face should be drawn')
+    parser.add_argument('-t', '--tolerance', default=0.63, help='an integer for the tolerance of distance between face matches')
     args = parser.parse_args()
 
     video_capture(args)
