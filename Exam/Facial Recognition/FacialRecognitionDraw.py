@@ -61,6 +61,7 @@ def draw_on_image(t, r, b, l, face_name, face_features, image, upscale=1, draw_f
         :param draw_features: Optionally if face features should be drawn on image
     """
 
+    # Upscale the cords to match the image
     (t, r, b, l) = (t*upscale, r*upscale, b*upscale, l*upscale)
 
     # Draw rectangle around face    
